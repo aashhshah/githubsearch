@@ -85,6 +85,30 @@ const theme = createTheme({
         // variant:"outlined"
       }
     },
+    MuiFilledInput: {
+      styleOverrides: {
+        root: {
+          borderWidth: "1px",
+          borderStyle: "solid",
+          borderColor: "#bdb3aa",
+          backgroundColor: "transparent",
+          "&.Mui-focused": {
+            boxShadow: "rgb(189, 179, 170) 0px 0px 0px 2px",
+            backgroundColor: "transparent",
+            borderColor: "rgb(189, 179, 170)",
+          },
+          borderRadius: "8px",
+        },
+        underline: {
+          "&&&:before": {
+            borderBottom: "none",
+          },
+          "&&:after": {
+            borderBottom: "none",
+          },
+        },
+      },
+    },
   },
 });
 
